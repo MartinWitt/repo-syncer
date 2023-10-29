@@ -34,7 +34,7 @@ jobs:
         with:
           gradle-version: release-candidate
       - name: apt update
-        run: apt install musl-tools
+        run: sudo apt install musl-tools
       - uses: graalvm/setup-graalvm@v1
         with:
           version: 'mandrel-latest'
