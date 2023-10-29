@@ -36,7 +36,7 @@ jobs:
       - uses: graalvm/setup-graalvm@v1
         with:
           java-version: '21'
-          distribution: 'graalvm' # See 'Options' for all available distributions
+          distribution: 'mandrel' # See 'Options' for all available distributions
           github-token: ${{ secrets.GITHUB_TOKEN }}
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
@@ -47,7 +47,7 @@ jobs:
           cosign-release: 'v1.13.1'
       # Build Quarkus
       - name: Build
-        run: gradle build -"Dquarkus.package.type=native"
+        run: gradle build -"Dquarkus.package.type=native" -"Dquarkus.native.additional-build-args"="--static","--libc=musl"
       # Workaround: https://github.com/docker/build-push-action/issues/461
       - name: Setup Docker buildx
         uses: docker/setup-buildx-action@6d5347c4025fdf2bb05167a2519cac535a14a408
