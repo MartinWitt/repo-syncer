@@ -1,37 +1,49 @@
 plugins {
-    id 'java'
-    id 'io.quarkus'
+	id 'java'
+	id 'io.quarkus'
+	id "com.diffplug.spotless" version "6.22.0"
 }
 
 repositories {
-    mavenCentral()
-    mavenLocal()
+	mavenCentral()
+	mavenLocal()
 }
 
 dependencies {
-    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
-    implementation 'io.quarkiverse.githubapi:quarkus-github-api:1.316.0'
-    implementation 'io.quarkus:quarkus-smallrye-health'
-    implementation 'io.quarkus:quarkus-arc'
-    testImplementation 'io.quarkus:quarkus-junit5'
+	implementation 'io.quarkus:quarkus-rest-client-reactive-jackson'
+	implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+	implementation 'io.quarkiverse.githubapi:quarkus-github-api:1.316.0'
+	implementation 'io.quarkus:quarkus-smallrye-health'
+	implementation 'io.quarkus:quarkus-arc'
+	testImplementation 'io.quarkus:quarkus-junit5'
+	implementation 'org.buildobjects:jproc:2.8.2'
 }
 
 group 'io.github.martinwitt'
 version '1.0.0-SNAPSHOT'
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_17
-    targetCompatibility = JavaVersion.VERSION_17
+	sourceCompatibility = JavaVersion.VERSION_17
+	targetCompatibility = JavaVersion.VERSION_17
 }
 
 test {
-    systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
+	systemProperty "java.util.logging.manager", "org.jboss.logmanager.LogManager"
 }
 compileJava {
-    options.encoding = 'UTF-8'
-    options.compilerArgs << '-parameters'
+	options.encoding = 'UTF-8'
+	options.compilerArgs << '-parameters'
 }
 
 compileTestJava {
-    options.encoding = 'UTF-8'
+	options.encoding = 'UTF-8'
+}
+spotless {
+	java {
+		googleJavaFormat()
+	}
+	flexmark {
+		target '**/*.md' // you have to set the target manually
+		flexmark() // or flexmark('0.64.8') // version is optional
+	}
 }
