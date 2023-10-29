@@ -2,7 +2,6 @@ package io.github.martinwitt.repo_syncer;
 
 import io.quarkus.logging.Log;
 import jakarta.enterprise.context.ApplicationScoped;
-import jakarta.inject.Inject;
 import jakarta.json.Json;
 import jakarta.json.JsonObject;
 import java.io.IOException;
@@ -11,15 +10,12 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpRequest.BodyPublishers;
 import java.net.http.HttpResponse;
-import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.kohsuke.github.GHRepository;
 
 @ApplicationScoped
 public class SyncFork {
 
-  @Inject
-  @ConfigProperty(name = "github.token")
-  private String token;
+  private String token = System.getenv("GITHUB_TOKEN");
 
   public boolean syncFork(GHRepository repo) {
     if (!repo.isFork()) {
