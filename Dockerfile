@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/static-debian12
+FROM quay.io/quarkus/quarkus-micro-image:2.0
 WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
