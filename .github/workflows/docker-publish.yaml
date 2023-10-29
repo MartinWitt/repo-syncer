@@ -38,6 +38,7 @@ jobs:
       - uses: graalvm/setup-graalvm@v1
         with:
           version: 'mandrel-latest'
+          native-image-musl: 'true'
           java-version: '21'
           distribution: 'mandrel' # See 'Options' for all available distributions
           github-token: ${{ secrets.GITHUB_TOKEN }}
