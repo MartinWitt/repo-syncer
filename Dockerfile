@@ -1,4 +1,4 @@
-FROM alpine:3.14
+FROM alpine:3.18
 WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
