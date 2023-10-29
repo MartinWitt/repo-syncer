@@ -40,7 +40,6 @@ jobs:
           version: 'mandrel-latest'
           native-image-musl: 'true'
           java-version: '21'
-          distribution: 'mandrel' # See 'Options' for all available distributions
           components: 'native-image'
           github-token: ${{ secrets.GITHUB_TOKEN }}
       # Install the cosign tool except on PR
