@@ -1,4 +1,4 @@
-FROM gcr.io/distroless/static-debian12
+FROM alpine:3.14
 WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
