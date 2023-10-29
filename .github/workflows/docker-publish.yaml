@@ -33,6 +33,8 @@ jobs:
         uses: gradle/gradle-build-action@842c587ad8aa4c68eeba24c396e15af4c2e9f30a # v2
         with:
           gradle-version: release-candidate
+      - name: apt update
+        run: apt install musl-tools
       - uses: graalvm/setup-graalvm@v1
         with:
           version: 'mandrel-latest'
