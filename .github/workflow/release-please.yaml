@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
+
+name: release-please
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: google-github-actions/release-please-action@4c5670f886fe259db4d11222f7dff41c1382304d # v3
+        with:
+          release-type: java
+          package-name: release-please-action
+          extra-files: |
+              buildSrc/src/main/groovy/xyz.keksdose.spoon.code_solver.java-common-conventions.gradle
