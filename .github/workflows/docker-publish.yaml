@@ -37,10 +37,9 @@ jobs:
         run: sudo apt install musl-tools
       - uses: graalvm/setup-graalvm@v1
         with:
-          version: 'mandrel-latest'
           native-image-musl: 'true'
           java-version: '21'
-          components: 'native-image'
+          components: 'native-image'          
           github-token: ${{ secrets.GITHUB_TOKEN }}
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
