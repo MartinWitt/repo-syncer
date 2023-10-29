@@ -41,6 +41,7 @@ jobs:
           native-image-musl: 'true'
           java-version: '21'
           distribution: 'mandrel' # See 'Options' for all available distributions
+          components: 'native-image'
           github-token: ${{ secrets.GITHUB_TOKEN }}
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
