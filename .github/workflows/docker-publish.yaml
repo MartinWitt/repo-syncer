@@ -35,6 +35,7 @@ jobs:
           gradle-version: release-candidate
       - uses: graalvm/setup-graalvm@v1
         with:
+          version: 'mandrel-latest'
           java-version: '21'
           distribution: 'mandrel' # See 'Options' for all available distributions
           github-token: ${{ secrets.GITHUB_TOKEN }}
