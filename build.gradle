@@ -10,6 +10,7 @@ repositories {
 }
 
 dependencies {
+    implementation 'io.quarkus:quarkus-quartz'
 	implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
 	implementation 'io.quarkiverse.githubapi:quarkus-github-api:1.316.0'
 	implementation 'io.quarkus:quarkus-smallrye-health'
