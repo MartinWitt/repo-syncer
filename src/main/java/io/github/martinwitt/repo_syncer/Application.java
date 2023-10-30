@@ -2,24 +2,19 @@ package io.github.martinwitt.repo_syncer;
 
 import io.quarkus.logging.Log;
 import io.quarkus.scheduler.Scheduled;
-import io.vertx.core.Vertx;
-import java.time.Duration;
 import org.kohsuke.github.GHRepository;
 
 public class Application {
 
   private GetForks getForks;
   private SyncFork syncFork;
-  private Vertx vertx;
-  private long duration = Duration.ofHours(6).toMillis();
 
-  public Application(GetForks getForks, SyncFork syncFork, Vertx vertx) {
+  public Application(GetForks getForks, SyncFork syncFork) {
     this.getForks = getForks;
     this.syncFork = syncFork;
-    this.vertx = vertx;
   }
 
-  @Scheduled(every = "6h")
+  @Scheduled(every = "{waittime.duration}", cron = "{waittime.cron}")
   public void updateForks() {
     var result = getForks.getAllForks();
     Log.info("Syncing %d forks".formatted(result.size()));

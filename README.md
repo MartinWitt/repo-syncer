@@ -21,6 +21,9 @@ services:
     image: ghcr.io/martinwitt/repo-syncer:master
     environment:
       GITHUB_TOKEN: <your github token>
+      WAITTIME_CRON: 0 */6 * * *  # every 6 hours optional. This defines the interval for the sync process.
+      WAITTIME_DURATION: 6H       # 6 hours 
+
 ```
 
 ## License
