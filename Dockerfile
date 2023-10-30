@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi-minimal:8.8-1072.1697626218
+FROM frolvlad/alpine-glibc
 WORKDIR /work/
 RUN chown 1001 /work \
     && chmod "g+rwX" /work \
