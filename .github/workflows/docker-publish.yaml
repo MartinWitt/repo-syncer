@@ -35,7 +35,7 @@ jobs:
           gradle-version: release-candidate
       - name: apt update
         run: sudo apt install musl-tools
-      - uses: graalvm/setup-graalvm@v1
+      - uses: graalvm/setup-graalvm@6c7d417a1ef253f4d667a69e6a5716927746e251 # v1
         with:
           java-version: '21'
           github-token: ${{ secrets.GITHUB_TOKEN }}
