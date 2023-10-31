@@ -20,7 +20,7 @@ dependencies {
 
 group 'io.github.martinwitt'
 // x-release-please-start-version
-version '0.0.1-SNAPSHOT'
+version '1.0.0'
 // x-release-please-end
 
 java {
