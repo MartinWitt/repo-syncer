@@ -44,7 +44,7 @@ spotless {
 		googleJavaFormat()
 	}
 	flexmark {
-		target '**/*.md' // you have to set the target manually
+		target 'README.md' // you have to set the target manually
 		flexmark() // or flexmark('0.64.8') // version is optional
 	}
 }
