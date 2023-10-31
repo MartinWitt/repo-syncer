@@ -15,14 +15,14 @@ The GitHub Fork Sync Tool is a utility built with Quarkus and GraalVM that autom
 
 ## Usage
 
-```
+```yaml
 services:
   repo-sync:
     image: ghcr.io/martinwitt/repo-syncer:master
     environment:
       GITHUB_TOKEN: <your github token>
-      WAITTIME_CRON: 0 */6 * * *  # every 6 hours optional. This defines the interval for the sync process.
-      WAITTIME_DURATION: 6H       # 6 hours 
+      WAITTIME_CRON: 0 */6 * * *  # This defines the interval for the sync process. 0 */6 * * * = every 6 hours default value 
+      WAITTIME_DURATION: 6H       # This defines the interval for the sync process. 6H = 6 hours default value. If WAITTIME_CRON is set, this value is ignored.
 
 ```
 
