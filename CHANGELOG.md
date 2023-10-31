@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/MartinWitt/repo-syncer/compare/v1.0.0...v1.0.1) (2023-10-31)
+
+
+### Bug Fixes
+
+* Update flexmark target to README.md. ([#15](https://github.com/MartinWitt/repo-syncer/issues/15)) ([a77314c](https://github.com/MartinWitt/repo-syncer/commit/a77314cc2d56383adbe55f982cc0c191c2acf739))
+
 ## 1.0.0 (2023-10-31)
 
 
