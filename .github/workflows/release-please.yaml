@@ -18,4 +18,4 @@ jobs:
           release-type: java
           package-name: release-please-action
           extra-files: |
-              buildSrc/src/main/groovy/xyz.keksdose.spoon.code_solver.java-common-conventions.gradle
+              build.gradle
