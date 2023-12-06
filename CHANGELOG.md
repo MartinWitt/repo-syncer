@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/MartinWitt/repo-syncer/compare/v1.0.2...v1.0.3) (2023-12-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.0 ([#42](https://github.com/MartinWitt/repo-syncer/issues/42)) ([d0ff303](https://github.com/MartinWitt/repo-syncer/commit/d0ff3036ed7fd86267e89e9571957e2024b52b32))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.1 ([#54](https://github.com/MartinWitt/repo-syncer/issues/54)) ([578dfff](https://github.com/MartinWitt/repo-syncer/commit/578dfffa4b3369ecd676a9ef9da7dfcf16006dad))
+
 ## [1.0.2](https://github.com/MartinWitt/repo-syncer/compare/v1.0.1...v1.0.2) (2023-11-27)
 
 
