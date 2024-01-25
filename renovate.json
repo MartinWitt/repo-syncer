@@ -3,16 +3,22 @@
     "config:recommended",
     "helpers:pinGitHubActionDigests"
   ],
-  "semanticCommits": true,
+  "ignoreDeps": ["google-github-actions/release-please-action"],
+  "semanticCommits": "auto",
   "packageRules": [
     {
       "matchUpdateTypes": [
+        "bump",
+        "digest",
+        "lockFileMaintenance",
+        "major",
         "minor",
         "patch",
         "pin",
-        "digest",
-        "fix"
+        "pinDigest",
+        "replacement"
       ],
+
       "automerge": true
     }
   ]
