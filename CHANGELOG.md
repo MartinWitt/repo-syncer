@@ -1,5 +1,25 @@
 # Changelog
 
+## [1.1.0](https://github.com/MartinWitt/repo-syncer/compare/v1.0.3...v1.1.0) (2024-01-25)
+
+
+### Features
+
+* Update base Docker image and simplify setup ([572ef46](https://github.com/MartinWitt/repo-syncer/commit/572ef463f9479efa75419b7a5d9d6c504e2a03eb))
+* Update base image and entrypoint in Dockerfile ([ffef863](https://github.com/MartinWitt/repo-syncer/commit/ffef8633773b177f32fe1cf072f47dba7fcd23ff))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.2 ([#63](https://github.com/MartinWitt/repo-syncer/issues/63)) ([53ee676](https://github.com/MartinWitt/repo-syncer/commit/53ee676d0cb5bf6a5e21416342e1485c937d1ef4))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.3 ([#65](https://github.com/MartinWitt/repo-syncer/issues/65)) ([c80e990](https://github.com/MartinWitt/repo-syncer/commit/c80e990d4e33ad2cfd05970e27a70f78004fba11))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.4 ([#73](https://github.com/MartinWitt/repo-syncer/issues/73)) ([fd154d5](https://github.com/MartinWitt/repo-syncer/commit/fd154d5787788a1d870de9570512101da4334e62))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.5 ([#78](https://github.com/MartinWitt/repo-syncer/issues/78)) ([7a19f5b](https://github.com/MartinWitt/repo-syncer/commit/7a19f5bb15dfb2ff16c41e74a28e000574eecc9a))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.6 ([#80](https://github.com/MartinWitt/repo-syncer/issues/80)) ([fab7fe8](https://github.com/MartinWitt/repo-syncer/commit/fab7fe81ca8f174873df3a091882c9d26639c5ec))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.7 ([#84](https://github.com/MartinWitt/repo-syncer/issues/84)) ([187f7fd](https://github.com/MartinWitt/repo-syncer/commit/187f7fd392e2374a8e99626cd66e9cb9dbc29b15))
+* fix entrypoint of application ([b1ffb9e](https://github.com/MartinWitt/repo-syncer/commit/b1ffb9ea5fd42bccb4ea1321144c653ec55d15ce))
+* Update application path in Dockerfile ([#89](https://github.com/MartinWitt/repo-syncer/issues/89)) ([b7e552a](https://github.com/MartinWitt/repo-syncer/commit/b7e552a3e4f1085603046fdc14edee5329dcb610))
+
 ## [1.0.3](https://github.com/MartinWitt/repo-syncer/compare/v1.0.2...v1.0.3) (2023-12-06)
 
 
