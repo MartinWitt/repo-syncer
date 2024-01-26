@@ -16,3 +16,15 @@ jobs:
     permissions:
       security-events: write
     uses: martinwitt/unreusable-workflows/.github/workflows/qodana-scan.yaml@master
+  junit:
+    uses: martinwitt/unreusable-workflows/.github/workflows/gradle-junit.yaml@master
+    with:
+      java-version: '21'
+      distribution: 'oracle'
+      working-dir: './'
+  build:
+    uses: martinwitt/unreusable-workflows/.github/workflows/gradle-junit.yaml@master
+    with:
+      java-version: '21'
+      distribution: 'oracle'
+      working-dir: './'
