@@ -1,4 +1,4 @@
-name: Spotless-Checks
+name: Codestyle
 on:
   workflow_dispatch:
   pull_request:
