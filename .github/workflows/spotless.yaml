@@ -6,7 +6,7 @@ on:
     branches:
       - master
 jobs:
-  run-check:
+  spotless:
     uses: martinwitt/unreusable-workflows/.github/workflows/spotless-gradle.yaml@master
     with:
       java-version: '21'
