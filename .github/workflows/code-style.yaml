@@ -6,9 +6,11 @@ on:
     branches:
       - master
 jobs:
-  spotless:
+  run-spotless:
     uses: martinwitt/unreusable-workflows/.github/workflows/spotless-gradle.yaml@master
     with:
       java-version: '21'
       distribution: 'oracle'
       working-dir: './'
+  qodana-scan:
+    uses: martinwitt/unreusable-workflows/.github/workflows/qodana-scan.yaml@master
