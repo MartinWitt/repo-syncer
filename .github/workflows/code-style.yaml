@@ -1,4 +1,4 @@
-name: Spotless-Checks
+name: Codestyle
 on:
   workflow_dispatch:
   pull_request:
@@ -6,9 +6,13 @@ on:
     branches:
       - master
 jobs:
-  spotless:
+  run-spotless:
     uses: martinwitt/unreusable-workflows/.github/workflows/spotless-gradle.yaml@master
     with:
       java-version: '21'
       distribution: 'oracle'
       working-dir: './'
+  qodana-scan:
+    permissions:
+      security-events: write
+    uses: martinwitt/unreusable-workflows/.github/workflows/qodana-scan.yaml@master
