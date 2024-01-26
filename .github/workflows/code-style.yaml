@@ -13,4 +13,6 @@ jobs:
       distribution: 'oracle'
       working-dir: './'
   qodana-scan:
+    permissions:
+      security-events: write
     uses: martinwitt/unreusable-workflows/.github/workflows/qodana-scan.yaml@master
