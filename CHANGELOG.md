@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/MartinWitt/repo-syncer/compare/v1.1.0...v1.2.0) (2024-02-08)
+
+
+### Features
+
+* Add JUnit and build workflows to code-style.yaml ([#96](https://github.com/MartinWitt/repo-syncer/issues/96)) ([9a34357](https://github.com/MartinWitt/repo-syncer/commit/9a34357b99907b1f5bbbf7a27ceac64eb2e7cfec))
+* Remove Qodana workflow and rename Spotless workflow ([#93](https://github.com/MartinWitt/repo-syncer/issues/93)) ([b7a85c2](https://github.com/MartinWitt/repo-syncer/commit/b7a85c23c7867af99ce7599ea20a4bac1b8b18d1))
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.6.8 ([#97](https://github.com/MartinWitt/repo-syncer/issues/97)) ([29a494a](https://github.com/MartinWitt/repo-syncer/commit/29a494a1d85d031a69bc466769da9e5ee540fa5b))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.7.1 ([#103](https://github.com/MartinWitt/repo-syncer/issues/103)) ([4ada7d7](https://github.com/MartinWitt/repo-syncer/commit/4ada7d75ae90ab20d2d71edffda310d5cc3d11fd))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.7.2 ([#107](https://github.com/MartinWitt/repo-syncer/issues/107)) ([52c9cde](https://github.com/MartinWitt/repo-syncer/commit/52c9cde50b7149888b561c4bd1ef79b164c8a6b9))
+
 ## [1.1.0](https://github.com/MartinWitt/repo-syncer/compare/v1.0.3...v1.1.0) (2024-01-25)
 
 
