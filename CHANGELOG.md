@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.2.1](https://github.com/MartinWitt/repo-syncer/compare/v1.2.0...v1.2.1) (2025-06-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency io.quarkiverse.githubapi:quarkus-github-api to v1.319.0 ([#114](https://github.com/MartinWitt/repo-syncer/issues/114)) ([e15ffdc](https://github.com/MartinWitt/repo-syncer/commit/e15ffdc639891488a65b1a92def0efaacfadfa2d))
+* **deps:** update dependency io.quarkiverse.githubapi:quarkus-github-api to v1.320.0 ([#139](https://github.com/MartinWitt/repo-syncer/issues/139)) ([b92a6eb](https://github.com/MartinWitt/repo-syncer/commit/b92a6eb21bceed635752074d9384600e8e0c5e97))
+* **deps:** update dependency io.quarkiverse.githubapi:quarkus-github-api to v1.321.0 ([#141](https://github.com/MartinWitt/repo-syncer/issues/141)) ([ef87b7b](https://github.com/MartinWitt/repo-syncer/commit/ef87b7bd9694674247030120b759f268650121e0))
+* **deps:** update dependency io.quarkiverse.githubapi:quarkus-github-api to v1.322.0 ([#204](https://github.com/MartinWitt/repo-syncer/issues/204)) ([2899ea3](https://github.com/MartinWitt/repo-syncer/commit/2899ea314d8e0d2726cce7ed86628734b2017bde))
+* **deps:** update dependency io.quarkiverse.githubapi:quarkus-github-api to v1.326.0 ([#292](https://github.com/MartinWitt/repo-syncer/issues/292)) ([7c64eec](https://github.com/MartinWitt/repo-syncer/commit/7c64eeccd724976ad83f14020f34fb2e922d2be6))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.7.3 ([#111](https://github.com/MartinWitt/repo-syncer/issues/111)) ([0c1a8ad](https://github.com/MartinWitt/repo-syncer/commit/0c1a8ad91bc6f319b018b49c4fc0ea011420deac))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.7.4 ([#115](https://github.com/MartinWitt/repo-syncer/issues/115)) ([9cd15da](https://github.com/MartinWitt/repo-syncer/commit/9cd15daa3c791d72df94ab95dba67ede09d796c1))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.8.1 ([#123](https://github.com/MartinWitt/repo-syncer/issues/123)) ([936bdbe](https://github.com/MartinWitt/repo-syncer/commit/936bdbe7832ac70f523a38e7afab413798d4c3bd))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.8.2 ([#127](https://github.com/MartinWitt/repo-syncer/issues/127)) ([058ff21](https://github.com/MartinWitt/repo-syncer/commit/058ff210afb70e9e218f5e2c1d71ed8f3bced441))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.8.3 ([#140](https://github.com/MartinWitt/repo-syncer/issues/140)) ([a60a125](https://github.com/MartinWitt/repo-syncer/commit/a60a1251003ef988013bd74a22b54604e5af3dbe))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.9.1 ([#145](https://github.com/MartinWitt/repo-syncer/issues/145)) ([e634806](https://github.com/MartinWitt/repo-syncer/commit/e6348062b19f6c81f3060fd95092f511affdc480))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.9.2 ([#148](https://github.com/MartinWitt/repo-syncer/issues/148)) ([ee94b73](https://github.com/MartinWitt/repo-syncer/commit/ee94b73d053c7c4191e69257d636367d764bd272))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.9.3 ([#152](https://github.com/MartinWitt/repo-syncer/issues/152)) ([352cc4d](https://github.com/MartinWitt/repo-syncer/commit/352cc4d51c9315b8bcbf6b28229f1123a1e0c3c3))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.9.4 ([#158](https://github.com/MartinWitt/repo-syncer/issues/158)) ([5d028d3](https://github.com/MartinWitt/repo-syncer/commit/5d028d3bc349e255a4f0b5374ffa0f43f3ff9668))
+* **deps:** update dependency io.quarkus.platform:quarkus-bom to v3.9.5 ([#165](https://github.com/MartinWitt/repo-syncer/issues/165)) ([4fdc04a](https://github.com/MartinWitt/repo-syncer/commit/4fdc04a3f073a5e76f2cb5c6de0397a96e1e2ce5))
+
 ## [1.2.0](https://github.com/MartinWitt/repo-syncer/compare/v1.1.0...v1.2.0) (2024-02-08)
 
 
